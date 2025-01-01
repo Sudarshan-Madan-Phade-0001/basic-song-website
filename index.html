@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf9964d5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">The Melody Mine</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><input type="text" id="searchBar" placeholder="Search for songs..."></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="container">
+        <div class="songlist">
+            <h1>"Where Beats Meet Hearts" ❤️🎵</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/c1.jpg" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="0"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c2.png" alt="2">
+                    <span class="songName">Street Legends</span>
+                    <span class="songlistplay"><span class="timestamp">04:20 <i id="1"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c3.jpg" alt="3">
+                    <span class="songName">Sweet Relief</span>
+                    <span class="songlistplay"><span class="timestamp">03:45 <i id="2"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c4.jpg" alt="4">
+                    <span class="songName">The Song of Night Owl's</span>
+                    <span class="songlistplay"><span class="timestamp">05:10 <i id="3"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c5.jpg" alt="5">
+                    <span class="songName">City Strees</span>
+                    <span class="songlistplay"><span class="timestamp">04:00 <i id="4"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c6.avif" alt="6">
+                    <span class="songName">Renegade</span>
+                    <span class="songlistplay"><span class="timestamp">03:30 <i id="5"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c7.jpg" alt="7">
+                    <span class="songName">Life Had Way</span>
+                    <span class="songlistplay"><span class="timestamp">04:50 <i id="6"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c8.jpg" alt="8">
+                    <span class="songName">Good to You</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="7"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c9.jpg" alt="9">
+                    <span class="songName">First Light</span>
+                    <span class="songlistplay"><span class="timestamp">03:40 <i id="8"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/c10.jpg" alt="10">
+                    <span class="songName">Don't Give Up</span>
+                    <span class="songlistplay"><span class="timestamp">04:15 <i id="9"
+                                class="fa-solid songItemPlay fa-circle-play"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div id="about" class="container">
+        <h1>About Us</h1>
+        <p>Welcome to our Spotify clone! This project is a practice exercise to replicate some of the features of
+            Spotify. Enjoy the music and the experience!</p>
+        <p>Our goal is to provide a seamless and enjoyable music streaming experience. We hope you find your favorite
+            tunes and discover new ones along the way.</p>
+    </div>
+
+    <div id="contact" class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us at:</p>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-step" id="previous" style="color: #B197FC;"></i>
+            <i class="fa-solid fa-circle-play" style="color: #B197FC;" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="next" style="color: #B197FC;"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="40px" id="gif"> <span id="masterSongName">Hold Me Tight</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
